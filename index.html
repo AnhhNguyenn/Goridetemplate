@@ -51,6 +51,71 @@
   width: 100%;
   height: 180px;
 }
+.footer {
+  background-color: #2b1d16;
+  color: #fff;
+  padding: 60px 30px 20px;
+}
+
+.footer .footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  gap: 40px;
+}
+
+.footer .footer-col {
+  flex: 1;
+  min-width: 260px;
+}
+
+.footer .footer-col h4 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer .footer-col p,
+.footer .footer-col a {
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer .footer-col a:hover {
+  color: #ff6600;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.footer .social-icons a:hover {
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
+  font-size: 14px;
+}
 
     </style>
 
@@ -462,7 +527,7 @@
         <!-- Footer Start -->
         <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
             <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
-                <div class="col-lg-3 col-md-6 mb-5">
+                <div class="footer-col">
                     <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
                     <p><i class="fa fa-map-marker-alt mr-2"></i>140 Le Trong Tan Street, Tan Phu District, Ho Chi Minh
                         City, Vietnam</p>
@@ -471,7 +536,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5">
                     <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Follow Us</h4>
-                    <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+                    <!-- <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p> -->
                     <div class="d-flex justify-content-start">
                         <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i
                                 class="fab fa-twitter"></i></a>
@@ -487,12 +552,10 @@
                     <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Open Hours</h4>
                     <div>
                         <h6 class="text-white text-uppercase">Monday - Friday</h6>
-                        <p>8.00 AM - 8.00 PM</p>
-                        <h6 class="text-white text-uppercase">Saturday - Sunday</h6>
-                        <p>2.00 PM - 8.00 PM</p>
+                        <p>8.00 AM - 5.00 PM</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-5">
+                <!-- <div class="col-lg-3 col-md-6 mb-5">
                     <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Newsletter</h4>
                     <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
                     <div class="w-100">
@@ -504,7 +567,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5"
                 style="border-color: rgba(256, 256, 256, .1) !important;">
