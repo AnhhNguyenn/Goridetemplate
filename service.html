@@ -24,6 +24,99 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+     <style>
+        /* Nền khung dịch vụ nổi */
+        .row.align-items-center {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            padding: 20px;
+            transition: all 0.3s ease;
+            min-height: 220px;
+        }
+
+        /* Hiệu ứng nổi khi hover */
+        .row.align-items-center:hover {
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+            transform: translateY(-4px);
+        }
+
+        /* Hình ảnh bo tròn đẹp hơn */
+        .row.align-items-center img {
+            border-radius: 10px;
+            object-fit: cover;
+            width: 100%;
+            height: 180px;
+        }
+
+        .footer {
+            background-color: #2b1d16;
+            color: #fff;
+            padding: 60px 30px 20px;
+        }
+
+        .footer .footer-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: left;
+            gap: 40px;
+        }
+
+        .footer .footer-col {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .footer .footer-col h4 {
+            margin-bottom: 20px;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .footer .footer-col p,
+        .footer .footer-col a {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .footer .footer-col a:hover {
+            color: #ff6600;
+        }
+
+        .footer .social-icons {
+            display: flex;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .footer .social-icons a {
+            display: inline-block;
+            border: 1px solid #fff;
+            padding: 10px;
+            border-radius: 50%;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .footer .social-icons a:hover {
+            background-color: #ff6600;
+            border-color: #ff6600;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 15px;
+            font-size: 14px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -41,15 +134,8 @@
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link active">Service</a>
-                    <a href="menu.html" class="nav-item nav-link">Menu</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu text-capitalize">
-                            <a href="reservation.html" class="dropdown-item">Reservation</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
                 </div>
             </div>
         </nav>
@@ -72,112 +158,122 @@
 
 
     <!-- Service Start -->
-    <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Services</h4>
-                <h1 class="display-4">Smart & Fast</h1>
-                <h5 class="mb-3">Our Services – Made for Your Everyday Life At GoRide, we make it easy for you to move, send, and enjoy – all in one app. Choose the service that fits your day:</h5>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-1.jpg" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-truck service-icon"></i>GoBike </h4>
-                            <p class="m-0">Need to get somewhere fast?  -Hop on a GoRide motorbike. Perfect for quick, on-the-go travel.</p>
+        <div class="container-fluid pt-5">
+            <div class="container">
+                <div class="section-title">
+                    <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Services</h4>
+                    <h1 class="display-4">Smart & Fast</h1>
+                    <h5 class="mb-3">Our Services – Made for Your Everyday Life At GoRide, we make it easy for you to
+                        move, send, and enjoy – all in one app. Choose the service that fits your day:</h5>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-5">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0" src="img/GoBike.jpg" alt="">
+                            </div>
+                            <div class="col-sm-7">
+                                <h4><i class="fa fa-truck service-icon"></i>GoBike </h4>
+                                <p class="m-0">Need to get somewhere fast? -Hop on a GoRide motorbike. Perfect for
+                                    quick, on-the-go travel.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-2.jpg" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-coffee service-icon"></i>GoCar</h4>
-                            <p class="m-0">Looking for comfort? Book a GoRide car for a smooth and relaxing trip – ideal for longer rides or when you're with family, friends.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-3.jpg" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-award service-icon"></i>GoFood</h4>
-                            <p class="m-0">Hungry? Browse your favorite restaurants and get hot meals delivered straight to your door – fast and fresh.</p>
+                    <div class="col-lg-6 mb-5">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0" src="img/GoCar.jpg" alt="">
+                            </div>
+                            <div class="col-sm-7">
+                                <h4><i class="fa fa-coffee service-icon"></i>GoCar</h4>
+                                <p class="m-0">Looking for comfort? Book a GoRide car for a smooth and relaxing trip –
+                                    ideal for longer rides or when you're with family, friends.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-4.jpg" alt="">
+                    <div class="col-lg-6 mb-5">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0" src="img/GoFood.jpg" alt="">
+                            </div>
+                            <div class="col-sm-7">
+                                <h4><i class="fa fa-award service-icon"></i>GoFood</h4>
+                                <p class="m-0">Hungry? Browse your favorite restaurants and get hot meals delivered
+                                    straight to your door – fast and fresh.</p>
+                            </div>
                         </div>
-                        <div class="col-sm-7">
-                            <h4><i class="fa fa-table service-icon"></i>GoSend</h4>
-                            <p class="m-0">Got something to deliver? From documents to packages, GoSend gets it there safely and on time.</p>
+                    </div>
+                    <div class="col-lg-6 mb-5">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0" src="img/GoSend.jpg" alt="">
+                            </div>
+                            <div class="col-sm-7">
+                                <h4><i class="fa fa-table service-icon"></i>GoSend</h4>
+                                <p class="m-0">Got something to deliver? From documents to packages, GoSend gets it
+                                    there safely and on time.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Service End -->
+        <!-- Service End -->
 
 
     <!-- Footer Start -->
-    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
-        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>140 Le Trong Tan Street, Tan Phu District, Ho Chi Minh City, Vietnam</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>Hotline: 1900636789</p>
-                <p class="m-0"><i class="fa fa-envelope mr-2"></i>goridegofastgomart@gmail.com</p>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Follow Us</h4>
-                <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
-                <div class="d-flex justify-content-start">
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+        <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+            <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+                <div class="footer-col">
+                    <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>140 Le Trong Tan Street, Tan Phu District, Ho Chi Minh
+                        City, Vietnam</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>Hotline: 1900636789</p>
+                    <p class="m-0"><i class="fa fa-envelope mr-2"></i>goridegofastgomart@gmail.com</p>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Open Hours</h4>
-                <div>
-                    <h6 class="text-white text-uppercase">Monday - Friday</h6>
-                    <p>8.00 AM - 8.00 PM</p>
-                    <h6 class="text-white text-uppercase">Saturday - Sunday</h6>
-                    <p>2.00 PM - 8.00 PM</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Newsletter</h4>
-                <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
-                <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary font-weight-bold px-3">Sign Up</button>
-                        </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Follow Us</h4>
+                    <!-- <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p> -->
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Open Hours</h4>
+                    <div>
+                        <h6 class="text-white text-uppercase">Monday - Friday</h6>
+                        <p>8.00 AM - 5.00 PM</p>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Newsletter</h4>
+                    <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+                    <div class="w-100">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-light" style="padding: 25px;"
+                                placeholder="Your Email">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary font-weight-bold px-3">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5"
+                style="border-color: rgba(256, 256, 256, .1) !important;">
+                <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">Domain</a>. All Rights
+                    Reserved.</a></p>
+                <p class="m-0 text-white">Designed by <a class="font-weight-bold" href="">Huỳnh Thị Ngọt Huền</a></p>
             </div>
         </div>
-        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-            <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">Domain</a>. All Rights Reserved.</a></p>
-            <p class="m-0 text-white">Designed by <a class="font-weight-bold" href="">Huỳnh Thị Ngọt Huền</a></p>
-        </div>
-    </div>
-    <!-- Footer End -->
-
+        <!-- Footer End -->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
